@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Comptaible" content="ie=edge">
+    <title>Penguin Jumps</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <style>
+      #canvas {
+        border-style: solid;
+        border-color: #2E86C1;
+        border-width: 8px;
+      }
+      #code {
+        overflow-y: scroll;
+        height:680px;
+        resize: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <h1 class="font-weight-bold">Penguin Jumps</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2 bg-primary rounded">
+            <h2 class="text-center font-weight-bold bg-light rounded py-1 my-3">Code</h2>
+            <textarea class="form-control font-weight-bold" id="code" readonly></textarea>
+          </div>
+          <div class="col-8">
+            <canvas id="canvas" width="960" height="768" class="rounded"></canvas>
+          </div>
+        </div>
+        <br />
+    </div>
+
+    <!-- JavaScript -->
+    <script src="penguin_jumps.js"></script> <!-- Funciones del juego -->
+    <script src="./js/sound.js"></script> <!-- Carga y reproducción de sonido -->
+    <script src="./js/functions.js"></script> <!-- Muestra funciones en testarea -->
+  </body>
+</html>

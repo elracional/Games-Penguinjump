@@ -1,0 +1,8 @@
+[package]
+name = "penguin_jumps"
+version = "0.1.0"
+authors = ["JAngel-98 <160963@upslp.edu.mx>"]
+edition = "2018"
+
+[dependencies]
+stdweb = "0.4.7"
